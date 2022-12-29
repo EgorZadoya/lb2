@@ -1,0 +1,38 @@
+h1 {
+    color: #00ffff;
+    font-size: 130%
+    }
+    h2 {
+        position: absolute;
+        top: 220px;
+        left: 200px;
+        color: #00ff0d
+        }
+    a:link { color: #ff0080; } 
+    a:hover { color: rgb(195, 0, 255); font-style: italic; }
+    .floatPic {
+        float: left; 
+        padding-right: 10px;
+   }
+
+
+   
+   .tab input, .tab-content { display: none; }
+   .tab-title::after {
+    content: '+'; /* Выводим плюс */
+    float: right; /* Размещаем по правому краю */
+   }
+   .tab-content {
+    padding: 10px 20px; /* Поля вокруг текста */
+   }
+   .tab :checked + .tab-title {
+    background-color: #50a2de; /* Цвет фона */
+    border-radius: 3px 3px 0 0; /* Скругляем уголки */
+    color: #fff; /* Цвет текста */
+   }    
+   .tab :checked + .tab-title::after {
+    content: '−'; 
+   }
+   .tab :checked ~ .tab-content {
+    display: block; 
+   }
